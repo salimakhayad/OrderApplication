@@ -1,0 +1,49 @@
+﻿@model OrderViewer.Models.OrderIndexModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="text-center">
+
+    @using (Html.BeginForm("Index", "Order", FormMethod.Post))
+    {
+        <hr />
+        <span>Start Datum :</span><input type="date" name="StartDatum" />
+        <span>Eind Datum :</span><input type="date" name="EindDatum" />
+        <input type="submit" value="Filter" />
+        <br />
+        @Html.ActionLink("Herlaad Orders", "Index", "Order")
+    }
+    @if (Model.Orders != null && Model.Orders.Any())
+    {
+        <table class="table">
+            <tr>
+                <th>Status</th>
+                <th>Bestandsnaam</th>
+                <th>Datum</th>
+            </tr>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>
+                        @if (order.Status)
+                        {
+                            @Html.Encode("True")
+                        }
+                        else
+                        {
+                            @Html.Encode("False")
+                        }
+                    </td>
+                    <td>
+                        @order.FileName
+                    </td>
+                    <td>
+                        @order.Date)
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+</div>
