@@ -2,7 +2,7 @@
 
 # TechnischeTest De Jaeger A.
 
-(voor opstart voer volgende command uit in de package manager console: update-database)
+(voor opstart voer volgende command uit in de package manager console: update-database) in OderData
 
 => App.Config file(s) kan je de connectionstring configureren en directory waar de gegenereerde bestanden plaats vinden.
 
