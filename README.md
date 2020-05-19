@@ -2,6 +2,8 @@
 
 # TechnischeTest De Jaeger A.
 
+(voor opstart voer volgende command uit in de package manager console: update-database)
+
 => App.Config file(s) kan je de connectionstring configureren en directory waar de gegenereerde bestanden plaats vinden.
 
 Als eerst start je Ordergenerator na het configureren van de generator.cs file. 
