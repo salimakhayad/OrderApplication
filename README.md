@@ -1,6 +1,5 @@
 # OrderApplication
 
-# TechnischeTest De Jaeger A.
 
 (voor opstart voer volgende command uit in de package manager console: update-database) in OderData
 
